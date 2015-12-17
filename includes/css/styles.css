@@ -4,7 +4,8 @@ My Custom CSS
 /* --------------------------------------
    Layout
    -------------------------------------- */
-
+aside
+{float: left;}
    #features {
    	text-align: center;
    }
@@ -33,12 +34,19 @@ My Custom CSS
      font-size: 32;
      padding-top: 15px;
    }
-   p
-{
-  padding: 10px;
+   p{
+  padding: 5px;
   font-family: BenchNine;
   font-size: 18px;
 }
+#pleft
+{text-align: left;}
+#pright
+{text-align: right}
+#thumbimg{
+    padding: 25px;
+background-color: lightgrey;
+  }
  /*tabbable section heading*/
 .tabb
 {
@@ -64,16 +72,15 @@ footer {
    	background: #333;
    	color: #eee;
    	font-size: 11px;
-   	padding: 20px;
-   }
+    }
    #imagesix
  {
-     padding-top: 20px;
+     padding-top: 10px;
      margin-bottom: 15px;
  }
  #imagecake
  {
-   padding-top: 20px;
+   padding-top: 10px;
    margin-bottom: 15px;
  }
 #part2
@@ -98,11 +105,6 @@ footer {
 
    .well .page-header h1 {
    	margin-top: 0;
-   }
-
-   ul.unstyled {
-   	list-style: none;
-   	padding: 0;
    }
 
 
@@ -135,18 +137,20 @@ footer {
 /* --------------------------------------
    Jumbotron
    -------------------------------------- */
-   .jumbotron
+   /*.jumbotron*/
+   #homejumbo
    {
      height: 40%;
      background-image: url(../../images/foodback.jpg);
      padding: 0;
-     margin-top:35px;
+     margin-top:100px;
      color: white;
    }
    #portfoliojumbo
    {   margin-top:100px;
-   text-align: center;
- color: white;}
+       background-image: url(../../images/foodback.jpg);
+       text-align: center;
+       color: white;}
    #jumboheader
    {
     padding-top: 20%;
@@ -218,29 +222,17 @@ footer {
    .thumbnail {
    	position: relative;
    }
-.infoback
-{
+ .infoback
+ {
   background-color: lightgrey;
   padding: 0;
   margin-top: 30px;
-}
+  margin-bottom:10px;
+ }
    .thumbnail h3 {
    	font-size: 16px;
    	margin: 0 0 10px;
    	line-height: 20px;
-   }
-
-   .thumbnail .price {
-   	font-size: 22px;
-   	position: absolute;
-   	top: -10px;
-   	right: -10px;
-   	padding: 10px;
-   }
-
-   .thumbnail .price sup {
-   	font-weight: normal;
-   	font-size: 12px;
    }
 
    .thumbnail span.glyphicon {
@@ -265,24 +257,25 @@ footer {
 {
 text-align: center;
 }
-   .everyone li a
+.everyone li a
 {
   color: white;
   text-decoration: underline;
   font-family: BenchNine;
   font-size: 22px;
 }
-.col-12 h1
+.col-sm-12 h1
 {text-align: center;
 font-size: 22;
 font-family: Droid Serif;}
-.col-12 h2
+.col-sm-12 h2
 {text-align: center;
 font-family: Droid Serif;}
-.col-12 h3
+.col-sm-12 h3
 {text-align: center;
+  font-size: 22;
 font-family: Droid Serif;}
-.col-12 p
+.col-sm-12 p
 {text-align: center;}
 .col-sm-4
 {padding-right: 0;}
@@ -290,8 +283,7 @@ font-family: Droid Serif;}
 {padding-left: 0;}
 .col-sm-4 h3
 {
-
-  padding-left: 29px;
+padding-left: 29px;
 }
 .social li
 {
@@ -310,9 +302,16 @@ font-family: Droid Serif;}
 /* Portrait & landscape phone */
 @media (max-width: 480px)
 {
-  .jumbotron {
+  /*.jumbotron*/
+
+   #homejumbo
+   {
     		background-image: url(../../images/small.jpg);
     	}
+  #portfoliojumbo
+  {
+       background-image: url(../../images/small.jpg);
+	}
   #jumboheader
   {
    font-size: 16px;
@@ -356,9 +355,14 @@ font-family: Droid Serif;}
 @media(min-width:481px) and (max-width: 999px) {
 
 
-.jumbotron {
+/*.jumbotron*/
+
+#homejumbo {
   		background-image: url(../../images/small.jpg);
   	}
+#portfoliojumbo {
+     background-image: url(../../images/small.jpg);
+   }
 #jumboheader
 {
  font-size: 20px;
@@ -421,13 +425,13 @@ a.btn.btn-info.btn-lg
   }
   #imagesix
   {
-     width:300px;
+     width: 60%;
      padding: 10px;
      margin-bottom: 10px;
   }
   #imagecake
   {
-   width: 300px;
+   width: 60%;
    padding: 10px;
    margin-bottom: 10px;
   }
@@ -438,12 +442,14 @@ a.btn.btn-info.btn-lg
 @media (min-width: 999px) and (max-width: 1200px) {
   #imagesix
 {
-    padding-top: 50px;
+  width: 100%;
+    padding-top: 10px;
     margin-bottom: 15px;
 }
 #imagecake
 {
-  padding-top: 50px;
+  width: 100%;
+  padding-top: 10px;
   margin-bottom: 15px;
 }
 
