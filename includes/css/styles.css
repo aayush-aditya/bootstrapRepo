@@ -20,6 +20,11 @@ My Custom CSS
    {
      text-align: center;
    }
+   #moreInfo
+   {
+     background-color: lightgrey;
+     margin-top: 30px;
+   }
    /*tabbable section heading*/
    .tabbh1
    {
@@ -44,16 +49,14 @@ My Custom CSS
   margin-bottom: 10px;
   padding-left: 30px;
 }
-#imagesix
-{
- width:300px;
-}
-#imagecake
-{
-width: 300px;
-}
+
 h3
 {font-family: Droid Serif;}
+h5
+{font-family: Droid Serif;
+padding-left: -20px;
+font-size: 24px;
+color: white;}
 
 #artcenter
 {text-align: center;}
@@ -63,6 +66,16 @@ footer {
    	font-size: 11px;
    	padding: 20px;
    }
+   #imagesix
+ {
+     padding-top: 20px;
+     margin-bottom: 15px;
+ }
+ #imagecake
+ {
+   padding-top: 20px;
+   margin-bottom: 15px;
+ }
 #part2
 {
   padding-top: 20px;
@@ -117,7 +130,7 @@ footer {
 /*search button in navigation bar*/
 #searchi
 {
-  width: 150px;
+  width: 120px;
 }
 /* --------------------------------------
    Jumbotron
@@ -127,9 +140,13 @@ footer {
      height: 40%;
      background-image: url(../../images/foodback.jpg);
      padding: 0;
-     margin-top:96px;
+     margin-top:35px;
      color: white;
    }
+   #portfoliojumbo
+   {   margin-top:100px;
+   text-align: center;
+ color: white;}
    #jumboheader
    {
     padding-top: 20%;
@@ -147,6 +164,7 @@ footer {
    -------------------------------------- */
    #myCarousel {
    	margin-top: 60px;
+    margin-left: 30px;
    }
 
    .carousel-caption {
@@ -203,6 +221,8 @@ footer {
 .infoback
 {
   background-color: lightgrey;
+  padding: 0;
+  margin-top: 30px;
 }
    .thumbnail h3 {
    	font-size: 16px;
@@ -252,10 +272,16 @@ text-align: center;
   font-family: BenchNine;
   font-size: 22px;
 }
+.col-12 h1
+{text-align: center;
+font-size: 22;
+font-family: Droid Serif;}
 .col-12 h2
-{text-align: center;}
+{text-align: center;
+font-family: Droid Serif;}
 .col-12 h3
-{text-align: center;}
+{text-align: center;
+font-family: Droid Serif;}
 .col-12 p
 {text-align: center;}
 .col-sm-4
@@ -283,65 +309,54 @@ text-align: center;
 
 /* Portrait & landscape phone */
 @media (max-width: 480px)
-
-  .btn-lg
+{
+  .jumbotron {
+    		background-image: url(../../images/small.jpg);
+    	}
+  #jumboheader
   {
-    padding: 5px 10px;
-    font-size: 5px;
-    line-height: 1.5;
-    border-radius: 3px;
+   font-size: 16px;
   }
-  #imagesix
+  a.btn.btn-primary.btn-lg
+  {
+    font-size: 7px;
+  }
+  a.btn.btn-info.btn-lg
+  {
+    font-size: 7px;
+  }
+
+  #jumboheader1
+  {
+   font-size: 12px;
+  }
+  .carousel-caption h4 {
+    font-size: 14px;
+  }
+  #jumbopara
+  {
+   font-size: 10px;
+   padding-top: 20%;
+   color: white;
+  }
+#imagesix
 {
    width:200px;
+   padding: 10px;
 }
 #imagecake
 {
  width: 200px;
+ padding: 10px;
 }
 }
-@media (max-width: 990px) {
-    .navbar-header {
-        float: none;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
-        margin: 7.5px -15px;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .navbar-text {
-        float: none;
-        margin: 15px 0;
-    }
-    /* since 3.1.0 */
-    .navbar-collapse.collapse.in {
-        display: block!important;
-    }
-    .collapsing {
-        overflow: hidden!important;
-    }
-}
+
 
 /* portrait tablet */
-@media(min-width:0px) and (max-width: 999px) {
+@media(min-width:481px) and (max-width: 999px) {
 
-  .jumbotron {
+
+.jumbotron {
   		background-image: url(../../images/small.jpg);
   	}
 #jumboheader
@@ -351,6 +366,14 @@ text-align: center;
 #jumboheader1
 {
  font-size: 20px;
+}
+a.btn.btn-primary.btn-lg
+{
+  font-size: 9px;
+}
+a.btn.btn-info.btn-lg
+{
+  font-size: 9px;
 }
 .carousel-caption h4 {
   font-size: 22px;
@@ -390,13 +413,25 @@ text-align: center;
       float: none;
       margin: 15px 0;
   }
-  /* since 3.1.0 */
   .navbar-collapse.collapse.in {
       display: block!important;
   }
   .collapsing {
       overflow: hidden!important;
   }
+  #imagesix
+  {
+     width:300px;
+     padding: 10px;
+     margin-bottom: 10px;
+  }
+  #imagecake
+  {
+   width: 300px;
+   padding: 10px;
+   margin-bottom: 10px;
+  }
+
 }
 
 /* Large desktop */
@@ -404,12 +439,12 @@ text-align: center;
   #imagesix
 {
     padding-top: 50px;
-   width: 300px;
+    margin-bottom: 15px;
 }
 #imagecake
 {
   padding-top: 50px;
- width: 300px;
+  margin-bottom: 15px;
 }
 
 }
